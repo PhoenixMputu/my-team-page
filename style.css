@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+span {
+  font-family: "PT Serif";
+}
+
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: #000000;
+  font-family: 'PT Serif';
+}
+
+section > aside {
+  width: 35%;
+}
+
+section > aside > h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+section > aside > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card:nth-child(3n + 2) {
+  margin-top: 10rem;
+}
+
+.card {
+  width: 238px;
+  height: 347px;
+  margin-right: 3rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  position: absolute;
+  line-height: 27px;
+  font-weight: 600;
+  margin-top: .5rem;
+  font-size: 18px;
+}
+
+span {
+  text-transform: uppercase;
+  position: absolute;
+  right: -135px;
+  top: 111px;
+  transform: rotate(90deg);
+  line-height: 16px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #a9a9a9;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  h1, aside {
+    width: 100% !important;
+    margin-bottom: 3rem;
+  }
+
+  section {
+    margin-bottom: 0;
+  }
+
+  .card {
+    width: 43%;
+    margin-right: 1rem !important;
+    margin-bottom: 1rem !important;
+    height: auto;
+  }
+
+  span {
+    right: -70px;
+    top: 50px;
+  }
+
+  figcaption {
+    font-size: 14px;
+  }
+
+  .card:nth-child(even){
+    margin-top: 10rem !important;
+  }
+
+  .card:nth-child(5){
+    margin-bottom: 2rem !important;
+  }
+
+  #developer {
+    margin-top: 2rem;
+  }
+}
